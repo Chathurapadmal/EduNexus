@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduNexus — Sign in</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1 class="auth-title">Welcome back</h1>
+    <p class="auth-sub">Sign in to continue to <strong>EduNexus</strong>.</p>
+
+    <form class="form" onsubmit="event.preventDefault(); location.href='index.html'">
+      <label class="label">Email
+        <input class="input" type="email" placeholder="you@example.com" required>
+      </label>
+      <label class="label">Password
+        <input class="input" type="password" placeholder="••••••••" required>
+      </label>
+      <div class="form-row">
+        <button class="btn btn-primary" type="submit">Sign in</button>
+        <a class="btn btn-ghost" href="register.html">Create account</a>
+      </div>
+    </form>
+
+    <p class="small muted" style="text-align:center;margin-top:8px">
+      Demo only — wire this to your backend later.
+    </p>
+  </div>
+</div>
+
+<footer class="footer">© <span id="year"></span> EduNexus</footer>
+
+</body></html>

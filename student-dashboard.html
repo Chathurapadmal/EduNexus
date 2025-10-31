@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EduNexus — Student Portal</title>
+<link rel="stylesheet" href="styles.css">
+</head><body>
+<header class="navbar">
+  <button class="sidebar-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('sidebar-collapsed')">☰</button>
+  <div class="brand"><div class="brand-logo">EN</div><span>EduNexus</span></div>
+  <nav class="nav-actions">
+    <a href="index.html" class="nav-link">Dashboard</a>
+    <a href="students.html" class="nav-link">Students</a>
+    <a href="student-dashboard.html" class="nav-link active">Student Portal</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+    <button class="btn btn-primary" onclick="location.href='login.html'">Sign Out</button>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Menu</div>
+    <a class="side-link" href="index.html">Overview</a>
+    <a class="side-link" href="students.html">Students</a>
+    <a class="side-link active" href="student-dashboard.html">Student Portal</a>
+    <a class="side-link" href="profile.html">Profile</a>
+    <div class="sidebar-foot"><div class="badge">v1.0</div></div>
+  </aside>
+
+  <main class="content">
+    <section class="hero">
+      <div>
+        <h1 class="page-title">Student Dashboard — R.A.C.P. Ranawaka (#33641)</h1>
+        <p class="muted">SE 23.2 • Semester 4 • GPA 3.18</p>
+      </div>
+      <div class="hero-actions">
+        <button class="btn btn-secondary">Message</button>
+        <button class="btn btn-primary">Update Status</button>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card"><div class="card-head"><span class="card-title">Credits</span></div><div class="card-metric">18/24</div><div class="card-foot success">On Track</div></article>
+      <article class="card"><div class="card-head"><span class="card-title">Attendance</span></div><div class="card-metric">92%</div><div class="card-foot info">This Month</div></article>
+      <article class="card"><div class="card-head"><span class="card-title">Fees</span></div><div class="card-metric">LKR 0</div><div class="card-foot success">No Dues</div></article>
+      <article class="card"><div class="card-head"><span class="card-title">Reports</span></div><div class="card-metric">5</div><div class="card-foot warning">1 Pending</div></article>
+    </section>
+
+    <section class="grid-2">
+      <div class="panel">
+        <div class="panel-head"><h2>Timetable (Week)</h2></div>
+        <div class="form">
+          <div class="widget"><strong>Mon:</strong> OS (9–11), SAD (1–3)</div>
+          <div class="widget" style="margin-top:8px"><strong>Tue:</strong> DEA (10–12)</div>
+          <div class="widget" style="margin-top:8px"><strong>Wed:</strong> Algorithms (9–11)</div>
+          <div class="widget" style="margin-top:8px"><strong>Thu:</strong> BPERP (1–4)</div>
+          <div class="widget" style="margin-top:8px"><strong>Fri:</strong> HCI (8–10)</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Recent Grades</h2></div>
+        <div class="form">
+          <div class="widget"><strong>OS Midterm:</strong> 78% <span class="pill pill-success">B+</span></div>
+          <div class="widget" style="margin-top:8px"><strong>SAD Assignment:</strong> 85% <span class="pill pill-success">A</span></div>
+          <div class="widget" style="margin-top:8px"><strong>Algorithms Quiz:</strong> 62% <span class="pill pill-warning">C</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>Submitted Reports</h2></div>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Title</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody>
+            <tr><td>OS — Unit 5 & 6 Notes</td><td>2025-06-14</td><td><span class="pill pill-success">Approved</span></td><td><button class="btn btn-ghost">View</button><button class="btn btn-ghost">Download</button></td></tr>
+            <tr><td>SAD — BRIGHT WAY Case Study</td><td>2025-06-18</td><td><span class="pill pill-warning">Pending</span></td><td><button class="btn btn-ghost">View</button><button class="btn btn-ghost">Remind</button></td></tr>
+            <tr><td>Algorithms — MCQ Bank</td><td>2025-07-07</td><td><span class="pill pill-danger">Rejected</span></td><td><button class="btn btn-ghost">Fix</button><button class="btn btn-ghost">Resubmit</button></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+   <footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-logo">EN</div>
+      <div>
+        <h3>EduNexus</h3>
+        <p class="muted">Student Management System</p>
+      </div>
+    </div>
+
+    <nav class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="student-dashboard.html">Student Portal</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>NSBM Green University</p>
+      <p>support@edunexus.lk</p>
+      <p>+94 71 234 5678</p>
+
+      <div class="socials">
+        <a aria-label="Facebook" href="#">f</a>
+        <a aria-label="Twitter" href="#">t</a>
+        <a aria-label="Instagram" href="#">i</a>
+        <a aria-label="GitHub" href="#">gh</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footbar">
+    <span>© <span id="year"></span> EduNexus. All rights reserved.</span>
+    <span class="legal">
+      <a href="#">Privacy</a>
+      <span>·</span>
+      <a href="#">Terms</a>
+      <span>·</span>
+      <a href="#">Help</a>
+    </span>
+  </div>
+</footer>
+
+<script>
+  // keep once per page
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+  </main>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>

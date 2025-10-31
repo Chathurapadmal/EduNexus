@@ -1,16 +1,16 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EduNexus — Dashboard</title>
+<title>EduNexus — Profile</title>
 <link rel="stylesheet" href="styles.css">
 </head><body>
 <header class="navbar">
   <button class="sidebar-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('sidebar-collapsed')">☰</button>
   <div class="brand"><div class="brand-logo">EN</div><span>EduNexus</span></div>
   <nav class="nav-actions">
-    <a href="index.html" class="nav-link active">Dashboard</a>
+    <a href="index.html" class="nav-link">Dashboard</a>
     <a href="students.html" class="nav-link">Students</a>
     <a href="student-dashboard.html" class="nav-link">Student Portal</a>
-    <a href="profile.html" class="nav-link">Profile</a>
+    <a href="profile.html" class="nav-link active">Profile</a>
     <button class="btn btn-primary" onclick="location.href='login.html'">Sign Out</button>
   </nav>
 </header>
@@ -18,59 +18,74 @@
 <div class="layout">
   <aside class="sidebar">
     <div class="sidebar-title">Menu</div>
-    <a class="side-link active" href="index.html">Overview</a>
+    <a class="side-link" href="index.html">Overview</a>
     <a class="side-link" href="students.html">Students</a>
     <a class="side-link" href="student-dashboard.html">Student Portal</a>
-    <a class="side-link" href="profile.html">Profile</a>
+    <a class="side-link active" href="profile.html">Profile</a>
     <div class="sidebar-foot"><div class="badge">v1.0</div></div>
   </aside>
 
   <main class="content">
     <section class="hero">
       <div>
-        <h1 class="page-title">Dashboard</h1>
-        <p class="muted">Quick overview of student counts, courses, reports, and fees.</p>
+        <h1 class="page-title">My Profile</h1>
+        <p class="muted">Update your personal information and security settings.</p>
       </div>
       <div class="hero-actions">
-        <button class="btn btn-primary" onclick="location.href='students.html'">Add Student</button>
-        <button class="btn btn-outline">Export</button>
+        <button class="btn btn-secondary">Change Password</button>
+        <button class="btn btn-primary">Save</button>
       </div>
-    </section>
-
-    <section class="cards">
-      <article class="card"><div class="card-head"><span class="card-title">Total Students</span></div><div class="card-metric">1,248</div><div class="card-foot success">+32 this month</div></article>
-      <article class="card"><div class="card-head"><span class="card-title">Active Courses</span></div><div class="card-metric">38</div><div class="card-foot info">New: 3</div></article>
-      <article class="card"><div class="card-head"><span class="card-title">Pending Reports</span></div><div class="card-metric">12</div><div class="card-foot warning">Action required</div></article>
-      <article class="card"><div class="card-head"><span class="card-title">Overdue Fees</span></div><div class="card-metric">LKR 186k</div><div class="card-foot danger">Follow up</div></article>
     </section>
 
     <section class="grid-2">
       <div class="panel">
-        <div class="panel-head"><h2>Recent Activity</h2></div>
-        <div class="form">
-          <div class="widget">
-            <p><strong>Ranawaka</strong> uploaded <em>OS — Unit 5 & 6 Notes.pdf</em></p>
-            <p class="muted small">2h ago • <span class="pill pill-success">Approved</span></p>
+        <div class="panel-head"><h2>Personal Information</h2></div>
+        <form class="form">
+          <label class="label">Full Name
+            <input class="input" type="text" value="Chathura P. Ranawaka">
+          </label>
+          <label class="label">Email
+            <input class="input" type="email" value="chathura@example.com">
+          </label>
+          <label class="label">Role
+            <input class="input" type="text" value="Admin">
+          </label>
+          <div class="form-row">
+            <button class="btn btn-primary" type="button">Save Changes</button>
+            <button class="btn btn-ghost" type="button">Cancel</button>
           </div>
-          <div class="widget" style="margin-top:10px">
-            <p><strong>Group K</strong> submitted <em>SAD — BRIGHT WAY Case Study.docx</em></p>
-            <p class="muted small">1d ago • <span class="pill pill-warning">Pending</span></p>
-          </div>
-        </div>
+        </form>
       </div>
 
       <div class="panel">
-        <div class="panel-head"><h2>Quick Actions</h2></div>
+        <div class="panel-head"><h2>Profile Picture</h2></div>
         <div class="form">
-          <button class="btn btn-secondary" onclick="location.href='students.html'">Manage Students</button>
-          <button class="btn btn-secondary">Create Course</button>
-          <button class="btn btn-secondary">Send Notice</button>
-          <p class="muted small" style="margin-top:10px">Static demo UI — connect to your backend later.</p>
+          <div class="widget" style="text-align:center">
+            <div style="width:96px;height:96px;border-radius:999px;background:#e5edff;margin:0 auto 10px;display:grid;place-items:center;color:#2946b8;font-weight:800">CP</div>
+            <button class="btn btn-secondary">Upload New</button>
+          </div>
         </div>
       </div>
     </section>
 
-<footer class="site-footer">
+    <section class="panel">
+      <div class="panel-head"><h2>Security</h2></div>
+      <div class="form">
+        <label class="label">Current Password
+          <input class="input" type="password" placeholder="••••••••">
+        </label>
+        <label class="label">New Password
+          <input class="input" type="password" placeholder="New password">
+        </label>
+        <label class="label">Confirm New Password
+          <input class="input" type="password" placeholder="Repeat new password">
+        </label>
+        <div class="form-row"><button class="btn btn-primary">Update Password</button></div>
+        <p class="small muted">This is a static demo; hook to your API later.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="brand-logo">EN</div>
@@ -120,6 +135,7 @@
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
-
-</body>
-</html>
+  </main>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
