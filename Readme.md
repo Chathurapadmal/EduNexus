@@ -109,9 +109,9 @@ It uses the **Royal Blue (#2563EB)** and **Sky Blue (#38BDF8)** color combinatio
 | Name                         | Role                    | Contribution                                 |
 | ---------------------------- | ----------------------- | -------------------------------------------- |
 | **33641 - RACP Ranawaka** | UI Designer / Developer | Concept, layout design, page development     |
-| **Banula Thisera**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
+| **34231 - Banula Thisera**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
 | **34214 - UDRA Dilepana**    | Frontend Contributors   | Wireframes, feedback, and visual refinements |
-| **Banula Thisera**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
+
 
 ## How to Use
 
