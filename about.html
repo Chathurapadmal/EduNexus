@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EduNexus — About</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="navbar">
+  <button class="sidebar-toggle" aria-label="Toggle navigation" onclick="document.body.classList.toggle('sidebar-collapsed')">☰</button>
+  <div class="brand"><div class="brand-logo">EN</div><span>EduNexus</span></div>
+  <nav class="nav-actions">
+    <a href="home.html" class="nav-link">Home</a>
+    <a href="index.html" class="nav-link">Dashboard</a>
+    <a href="students.html" class="nav-link">Students</a>
+    <a href="profile.html" class="nav-link">Profile</a>
+    <button class="btn btn-primary" onclick="location.href='login.html'">Sign In</button>
+  </nav>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Menu</div>
+    <a class="side-link" href="home.html">Home</a>
+    <a class="side-link" href="index.html">Overview</a>
+    <a class="side-link" href="students.html">Students</a>
+    <a class="side-link" href="student-dashboard.html">Student Portal</a>
+    <a class="side-link active" href="about.html">About</a>
+    <a class="side-link" href="contact.html">Contact</a>
+    <div class="sidebar-foot"><div class="badge">v1.0</div></div>
+  </aside>
+
+  <main class="content">
+    <section class="hero">
+      <div>
+        <h1 class="page-title">About EduNexus</h1>
+        <p class="muted">Our mission, values, and what we’re building for learners and staff.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn btn-secondary" href="contact.html">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top:18px">
+      <div class="panel-head"><h2>Our Mission</h2></div>
+      <div class="form">
+        <p>EduNexus simplifies student and academic management for universities and schools. We connect students, lecturers, and admins with clear workflows for enrollments, attendance, grading, and reports—powered by a clean, reliable interface in your color palette.</p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <div class="card-head"><span class="card-title">Transparency</span></div>
+        <div class="card-metric">Clear</div>
+        <div class="card-foot success">Unified records, fewer surprises</div>
+      </article>
+      <article class="card">
+        <div class="card-head"><span class="card-title">Efficiency</span></div>
+        <div class="card-metric">Fast</div>
+        <div class="card-foot info">Automated workflows & tracking</div>
+      </article>
+      <article class="card">
+        <div class="card-head"><span class="card-title">Security</span></div>
+        <div class="card-metric">Safe</div>
+        <div class="card-foot warning">Role-based access & audit</div>
+      </article>
+      <article class="card">
+        <div class="card-head"><span class="card-title">Support</span></div>
+        <div class="card-metric">Human</div>
+        <div class="card-foot danger">Real people, real help</div>
+      </article>
+    </section>
+
+    <section class="grid-2">
+      <div class="panel">
+        <div class="panel-head"><h2>What We Offer</h2></div>
+        <div class="form">
+          <ul>
+            <li>Student records management with status tracking</li>
+            <li>Attendance & timetable views</li>
+            <li>Grades, reports, and approval flows</li>
+            <li>Exports (CSV/PDF) and basic analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head"><h2>Roadmap</h2></div>
+        <div class="form">
+          <ul>
+            <li>Notifications & messaging</li>
+            <li>Payment tracking integration</li>
+            <li>Mobile-first student portal</li>
+            <li>Advanced dashboards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><h2>FAQ</h2></div>
+      <div class="form">
+        <p><strong>Is this connected to a backend?</strong><br><span class="muted">This demo is static HTML/CSS. You can wire it to your API later.</span></p>
+        <p><strong>Can we change the colors?</strong><br><span class="muted">Yes—palette variables live in <code>:root</code> in <code>styles.css</code>.</span></p>
+        <p><strong>Is it responsive?</strong><br><span class="muted">Yep. It adapts from desktop to mobile with clean breakpoints.</span></p>
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> EduNexus</footer>
+  </main>
+</div>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
