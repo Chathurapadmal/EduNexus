@@ -85,6 +85,82 @@ body{
   display:flex; align-items:flex-start; justify-content:space-between; gap:16px;
   background:var(--white); border:var(--border); border-radius:var(--radius); padding:22px; box-shadow:var(--shadow);
 }
+
+/* ==== HOME PAGE SECTIONS ==== */
+
+.hero-section{
+  display:flex; align-items:center; justify-content:space-between;
+  flex-wrap:wrap; padding:60px 10vw;
+  background:linear-gradient(135deg, var(--navy) 0%, #2141b5 60%, #2563EB 100%);
+  color:var(--white);
+}
+.hero-content{ max-width:520px; }
+.hero-content h1{
+  font-size:42px; line-height:1.2; margin-bottom:12px;
+}
+.hero-content h1 span{
+  color:var(--secondary);
+}
+.hero-content p{
+  font-size:18px; color:#dfe9ff; line-height:1.6; margin-bottom:24px;
+}
+.hero-buttons{display:flex; gap:14px; flex-wrap:wrap}
+.hero-illustration img{
+  max-width:320px; width:100%; border-radius:16px;
+  box-shadow:0 12px 24px rgba(0,0,0,.15);
+}
+
+/* About */
+.about{
+  text-align:center; padding:60px 8vw;
+}
+.about h2{
+  font-size:32px; color:var(--navy); margin-bottom:14px;
+}
+.about p{
+  font-size:18px; max-width:700px; margin:0 auto; color:var(--muted);
+}
+
+/* Features */
+.features{
+  background:var(--bg); padding:60px 8vw; text-align:center;
+}
+.features h2{
+  font-size:32px; color:var(--navy); margin-bottom:32px;
+}
+.feature-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:24px;
+}
+.feature-card{
+  background:var(--white); border-radius:16px; box-shadow:var(--shadow);
+  padding:24px; text-align:center; transition:.3s;
+}
+.feature-card:hover{transform:translateY(-4px)}
+.feature-card .icon{
+  font-size:36px; margin-bottom:10px; color:var(--primary);
+}
+.feature-card h3{margin:10px 0; color:var(--text);}
+.feature-card p{color:var(--muted); font-size:15px;}
+
+/* CTA Footer */
+.cta-footer{
+  text-align:center; padding:60px 20px; background:var(--navy); color:var(--white);
+}
+.cta-footer h2{
+  font-size:28px; margin-bottom:10px;
+}
+.cta-footer p{
+  color:#e0e8ff; max-width:620px; margin:0 auto 24px;
+}
+.cta-buttons{display:flex; justify-content:center; gap:14px; flex-wrap:wrap}
+
+/* Responsive */
+@media (max-width: 860px){
+  .hero-section{flex-direction:column-reverse; text-align:center;}
+  .hero-illustration img{margin-bottom:20px;}
+}
+
+
 .page-title{margin:0 0 6px; font-size:28px}
 .muted{color:var(--muted)}
 .small{font-size:12px}
