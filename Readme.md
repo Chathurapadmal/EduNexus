@@ -1,5 +1,7 @@
 # EduNexus — Student Management System
 
+Design Link - https://www.figma.com/design/M3IBTa54r7u3Ws1MS9K6ZF/BPERP_EduNexus?node-id=0-1&t=dYJI7qST50bnH4eX-1
+
 EduNexus is a **modern, responsive student management system** designed to streamline academic and administrative operations.  
 This project includes the **UI prototype designed in Figma** and corresponding front-end structure (HTML + CSS mockup).  
 It follows a professional color palette, accessibility standards, and clean UI components suitable for web-based student management systems.
@@ -107,7 +109,9 @@ It uses the **Royal Blue (#2563EB)** and **Sky Blue (#38BDF8)** color combinatio
 | Name                         | Role                    | Contribution                                 |
 | ---------------------------- | ----------------------- | -------------------------------------------- |
 | **Chathura Padmal Ranawaka** | UI Designer / Developer | Concept, layout design, page development     |
-| Group Members                | Frontend Contributors   | Wireframes, feedback, and visual refinements |
+| **Banula Thisera**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
+| **Akash Dilepana**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
+| **Banula Thisera**           | Frontend Contributors   | Wireframes, feedback, and visual refinements |
 
 ## How to Use
 
