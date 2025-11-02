@@ -115,6 +115,7 @@ It uses the **Royal Blue (#2563EB)** and **Sky Blue (#38BDF8)** color combinatio
 | **34258 - MLADSanjeewanee**|UI Designer | page devlopment | Developer | Contribution |
 | **34266 - MB Marambage**|UI Designer | page devlopment | Developer | Layout design, page development |
 | **34210 - GBR Laksara**|UI Designer | page devlopment | Developer | Contribution |
+| ****|UI Designer | page devlopment | Developer | Contribution |
 ## How to Use
 
 1. Open the **Figma file** for UI exploration.
